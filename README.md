@@ -98,8 +98,8 @@ base64sezar($s,$x,$t,$v);
 
 	 s : şifrelenecek değer
 	 x : anahtar
-	 t : e => şifrele
-	     d => çöz
+	 t : e => şifrele (encode)
+	     d => çöz (decode)
 	 v : 1 => büyük-küçük harf + rakamlar
 	     2 => sadece büyük harf + rakamlar
 ```
