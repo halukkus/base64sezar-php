@@ -24,7 +24,7 @@ D7RvEU
 ## Genişletilmiş şifreleme:
 ```php
 $gizliid = base64sezar(rand(99,999).'/'.$id.'/'.rand(99,999),$anahtar,'e',1); // random sayılar (tercihen) ekleyerek şifreliyoruz.
-$acikid = base64sezar('/',kriptola($gizliid,$anahtar,'d',1))[1]; // anahtar ile çözüp, / ile parçalayıp id yi alıyoruz.
+$acikid = explode('/',base64sezar($gizliid,$anahtar,'d',1))[1]; // anahtar ile çözüp, / ile parçalayıp id yi alıyoruz.
 echo $gizliid.'<br>';
 echo $acikid.'<br>';
 ```
