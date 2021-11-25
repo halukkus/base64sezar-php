@@ -1,10 +1,10 @@
 <?php
 //	s : şifrelenecek değer
 //	x : anahtar
-//	t : e => şifrele
-//	    d => çöz
-//	v : 1 => büyük-küçük harf şifre
-//	    2 => sadece büyük harf şifre
+//	t : e => şifrele (encode)
+//	    d => çöz (decode)
+//	v : 1 => büyük-küçük harf + rakamlar
+//	    2 => sadece büyük harf + rakamlar
 function base64sezar($s,$x,$t,$v){ 
 	$s_t='';
 	if ($v=='1'){
