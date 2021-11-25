@@ -5,7 +5,7 @@
 //	    d => çöz
 //	v : 1 => büyük-küçük harf şifre
 //	    2 => sadece büyük harf şifre
-function kriptola($s,$x,$t,$v){ 
+function base64sezar($s,$x,$t,$v){ 
 	$s_t='';
 	if ($v=='1'){
 	$pwf='abcdefghijklmnoprstuvyzxwq0123456789ABCDEFGHIJKLMNOPRSTUVYZXWQ';
